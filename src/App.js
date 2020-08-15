@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
-import Directory from '../components/Directory/index';
-import Header from '../components/Directory/index';
-import SearchBar from '../components/Directory/index';
+import Header from './components/Header/index';
+import Directory from './components/Directory/index';
+import SearchBar from './components/SearchBar/index';
 
 function App() {
   return (
@@ -13,5 +12,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
