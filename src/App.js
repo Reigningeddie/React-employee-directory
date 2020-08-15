@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
+import Directory from '../components/Directory/index';
+import Header from '../components/Directory/index';
+import SearchBar from '../components/Directory/index';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </header>
+      <Header />
+      <SearchBar />
+      <Directory />
     </div>
   );
 }
