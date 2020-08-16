@@ -1,7 +1,26 @@
 import React from "react";
 import { Table } from 'react-bootstrap';
 
-function Directory() {
+class ListHeader extends React.Component {
+
+    state = {
+        alphabetical: true,
+        ascending: true,
+        sortedEmployees: [],
+        employees: []
+    }
+
+    componentDidMunt() {
+        if (this.state.sortedEmployees.length < 1) {
+            this.setState({
+            
+            })
+        }
+    }
+}
+
+
+function Directory(props) {
     return(
         <Table>
             <thead>
@@ -14,7 +33,14 @@ function Directory() {
                 </tr>
             </thead>
             <tbody>
-                
+                        <tr key={props.id} >
+                            <td><img alt={props.image} src={props.image} /></td>
+                            <td>{props.first} {props.last}</td>
+                            <td>{props.phone}</td>
+                            <td>{props.email}</td>
+                            <td>{props.dob}</td>
+                        </tr>
+                    )
             </tbody>
         </Table>
     )

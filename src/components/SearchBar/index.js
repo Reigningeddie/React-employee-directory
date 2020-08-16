@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap'
 
-function SearchBar() {
+function SearchBar(props) {
     return (
         <div className="searchbox">
             <Form className="form-inline">
